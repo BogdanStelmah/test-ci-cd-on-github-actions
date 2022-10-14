@@ -34,7 +34,8 @@ jobs:
       run: |
         npm run build --if-present
       working-directory: ./backend
-    - name: Run test
+    - name: Running unit and e2e tests
       run: |
-        npm test
+        npm run test
+        npm run test:e2e
       working-directory: ./backend
